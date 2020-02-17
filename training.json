@@ -1,0 +1,68 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "identity",
+         "patterns": ["who are you", "what are u", "presente yourself", "define urself"],
+         "responses": ["I'm Trello chatbot ,created by Gharbi and Ibrahimi", "you could call me trello_t made by Gharbi and Ibra"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "mood",
+         "patterns": ["how are you", "are you okay", "what's up"],
+         "responses": ["I'm fine ","I'm doing well","I'm OK"],
+         "context_set": ""
+        },
+        {"tag": "create_projet",
+         "patterns": ["can you create a project", "build a new project", "start the project", "add the new project"],
+         "responses": ["give the project's title", "write the name of the project"],
+         "context_set": ""
+        },
+        {"tag": "delete_project",
+         "patterns": ["I want to delete a project", "Erase the project"],
+         "responses": ["give the project's title", "write the name of the project"],
+         "context_set": ""
+        },
+        {"tag": "show_project",
+         "patterns": ["Id like to see the information of the project", "show me the project", "display the project"],
+         "responses": ["give me the title", "give me the project's name"],
+         "context_set": ""
+        },
+        {"tag": "create_task",
+         "patterns": ["can you create a task", "build a new task", "start the task", "add the new task"],
+         "responses": ["give the task's title", "write the name of the task"],
+         "context_set": ""
+        },
+        {"tag": "delete_task",
+         "patterns": ["I want to delete a task", "Erase the task"],
+         "responses": ["give the task's title", "write the name of the task"],
+         "context_set": ""
+        },
+        {"tag": "show_task",
+         "patterns": ["Id like to see the information of the task", "show me the task", "display the task"],
+         "responses": ["give me the title", "give me the task's name"],
+         "context_set": ""
+        },
+        {"tag": "create_member",
+         "patterns": ["can you create a member", "add the new member"],
+         "responses": [ "write the name of the member"],
+         "context_set": ""
+        },
+        {"tag": "delete_member",
+         "patterns": ["I want to delete a member", "Erase the member"],
+         "responses": ["write the name of the member"],
+         "context_set": ""
+        },
+        {"tag": "show_member",
+         "patterns": ["Id like to see the information of the member", "show me the member", "display the info of the member"],
+         "responses": ["give me the member's name"],
+         "context_set": ""
+        }
+   ]
+}

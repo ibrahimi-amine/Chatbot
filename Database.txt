@@ -1,0 +1,33 @@
+create database javaee;
+
+CREATE TABLE membre (
+    nom_m varchar(100) ,
+    email_m varchar(100),
+    password_m varchar(100),
+    id_m int PRIMARY KEY NOT NULL AUTO_INCREMENT
+);
+
+
+
+
+CREATE TABLE projet (
+	id_p int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	id_m int,
+    titre_p varchar(100),
+    description varchar(500),
+    FOREIGN KEY (id_m) REFERENCES membre(id_m)
+    
+);
+
+
+
+
+CREATE TABLE tache (
+    id_t int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    desc_t varchar(100),
+    statut varchar(100),
+    id_m int,
+    id_p int,
+    FOREIGN KEY (id_m) REFERENCES membre(id_m),
+    FOREIGN KEY (id_p) REFERENCES projet(id_p)
+);
