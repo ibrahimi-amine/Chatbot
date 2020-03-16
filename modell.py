@@ -1,12 +1,13 @@
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
 
 import numpy
 import tflearn
 import tensorflow
 import random
 import json
+
+stemmer = LancasterStemmer()
 
 
 with open("training.json") as file:
@@ -97,9 +98,7 @@ def bag_of_words(s, words):
 
 
 def chat(inp):
-
-    liste=[]
-    
+    liste=[]    
     results = model.predict([bag_of_words(inp, words)])
     results_index = numpy.argmax(results)
     tag = labels[results_index]
